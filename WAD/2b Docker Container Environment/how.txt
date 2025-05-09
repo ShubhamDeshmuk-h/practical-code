@@ -1,0 +1,84 @@
+Microsoft Windows [Version 10.0.22631.4751]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\exam>docker -v
+Docker version 24.0.6, build ed223bc
+
+C:\Users\exam>docker pull openjdk
+Using default tag: latest
+latest: Pulling from library/openjdk
+Digest: sha256: 9b448de897d211c9e0ec635a485650aed6e28d4ecalefbc34940560a480b3f1f
+Status: Image is up to date for openjdk: latest
+docker.io/library/openjdk: latest
+
+What's Next?
+1. Sign in to your Docker account > docker login
+2. View a summary of image vulnerabilities and recommendations > docker scout quickview openjdk
+
+C:\Users\exam>docker image
+
+Usage: docker image COMMAND
+
+Manage images
+
+Commands:
+build - Build an image from a Dockerfile
+history - Show the history of an image
+import - Import the contents from a tarball to create a filesystem image
+inspect - Display detailed information on one or more images
+Load - Load an image from a tar archive or STDIN
+ls - List images
+prune - Remove unused images
+pull - Download an image from a registry
+push - Upload an image to a registry
+rm - Remove one or more images
+save - Save one or more images to a tar archive (streamed to STDOUT by default)
+
+Run 'docker image COMMAND -- help' for more information on a command.
+
+C:\Users\exam>docker images
+
+C:\Users\exam>docker run -- name JAVA -it -d openjdk
+90674dec6b007c10bd4534837371a08ba140f3409b9a462d776898217ed578fc
+
+C:\Users\exam>docker exec -it JAVA jshell
+| Welcome to JShell -- Version 18.0.2.1
+| For an introduction type: /help intro
+
+jshell> System.out.println("Hello world");
+Hello world
+
+jshell> int a=30;
+a => 30
+
+jshell> int b=6;
+b == > 6
+
+jshell> System.out.println(a*b);
+180
+
+jshell> System.out.println(a+b);
+36
+
+jshell> docker ps
+created variable ps, however, it cannot be referenced until class docker is declared
+
+jshell> /exit
+Goodbye
+
+C:\Users\exam>docker ps
+
+C:\Users\exam>docker stop 90674dec6b004d
+
+C:\Users\exam>docker stop 90674dec6b00
+90674dec6b00
+
+C:\Users\exam>docker images
+
+C:\Users\exam>docker image prune
+WARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Total reclaimed space: 0B
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Admission</title>
+ <link rel="stylesheet"
+href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+ <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ <style>
+ .progress-bar {
+ background: #ddd;
+ border-radius: 20px;
+ height: 20px;
+ overflow: hidden;
+ margin-top: 10px;
+ }
+ .progress-fill {
+ height: 100%;
+ background: #4CAF50;
+ width: 70%;
+ text-align: center;
+ color: white;
+ line-height: 20px;
+ border-radius: 20px;
+ }
+ </style>
+</head>
+<body>
+ <div data-role="page" id="admission">
+    <div data-role="header">
+        <h1>Admission Info</h1>
+        <div data-role="navbar">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admission.html" class="ui-btn-active">Admission</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+        </div>
+        <div data-role="content">
+        <h2>How to Apply</h2>
+        <ol data-role="listview" data-inset="true">
+        <li>Register an account on our website</li>
+        <li>Fill out the online application form</li>
+        <li>Upload required documents</li>
+        <li>Pay the application fee</li>
+        <li>Wait for confirmation</li>
+        </ol>
+        <div data-role="collapsible" data-collapsed-icon="arrow-d"
+       data-expanded-icon="arrow-u">
+        <h3>Required Documents</h3>
+        <ul data-role="listview">
+        <li>High School Certificate</li>
+        <li>Passport-size Photo</li>
+        <li>ID Proof</li>
+        <li>Resume (if applicable)</li>
+        </ul>
+        </div>
+        <div data-role="collapsible" data-collapsed-icon="arrow-d"
+        data-expanded-icon="arrow-u">
+         <h3>Admission Timeline</h3>
+         <p><strong>Application Opens:</strong> April 1st</p>
+         <p><strong>Deadline:</strong> June 15th</p>
+         <p><strong>Interviews:</strong> July</p>
+         <p><strong>Classes Begin:</strong> August</p>
+         </div>
+         <h3>Application Progress</h3>
+         <div class="progress-bar">
+         <div class="progress-fill">70%</div>
+         </div>
+         <a href="courses.html" data-role="button" data-icon="arrow-r" data-theme="b">View
+        Courses</a>
+         </div>
+         </div>
+        </body>
+        </html>
+        

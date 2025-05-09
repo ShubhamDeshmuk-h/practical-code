@@ -1,0 +1,5 @@
+register with some user details
+
+then right click -> inspect and then show the user details in the console
+
+the login email and password is hardcoded in html file

@@ -1,0 +1,9 @@
+npm init
+
+press enter
+
+yes
+
+npm install express
+
+node index.js

@@ -1,0 +1,15 @@
+terminal 
+
+npm init 
+
+npm install -g @angular/cli@latest
+
+ng new partc
+
+select css
+
+yes
+
+yes
+
+ng serve

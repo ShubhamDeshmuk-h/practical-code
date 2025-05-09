@@ -1,0 +1,3 @@
+register with some user details
+
+then right click -> inspect and then show the user details in the console

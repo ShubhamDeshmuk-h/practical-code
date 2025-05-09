@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Home</title>
+ <link rel="stylesheet"
+href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+ <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ <style>
+ .hero {
+ background: #2196F3;
+ color: white;
+ padding: 30px 15px;
+ text-align: center;
+ border-radius: 10px;
+ }
+ .hero h1 {
+ margin: 0;
+ font-size: 28px;
+ }
+ .hero p {
+ font-size: 16px;
+ }
+ </style>
+</head>
+<body>
+ <div data-role="page" id="home">
+ <div data-role="header">
+ <h1>Welcome</h1>
+ <div data-role="navbar">
+ <ul>
+ <li><a href="index.html" class="ui-btn-active">Home</a></li>
+ <li><a href="admission.html">Admission</a></li>
+ <li><a href="courses.html">Courses</a></li>
+ <li><a href="contact.html">Contact Us</a></li>
+ </ul>
+</div>
+</div>
+<div data-role="content">
+<div class="hero">
+<h1>Build Your Future With Us</h1>
+<p>Join thousands of students and explore your potential.</p>
+</div>
+<div data-role="collapsible" data-collapsed-icon="arrow-d"
+data-expanded-icon="arrow-u">
+<h3>About Our Institute</h3>
+<p>We provide world-class education in technology, design, and business. Our mission
+is to empower future leaders.</p>
+</div>
+<label for="notifications-toggle">Enable Notifications:</label>
+<select name="notifications-toggle" id="notifications-toggle" data-role="flipswitch">
+<option value="off">Off</option>
+<option value="on">On</option>
+</select>
+<h3>Quick Access</h3>
+<ul data-role="listview" data-inset="true">
+<li><a href="courses.html" data-icon="grid">View All Courses</a></li>
+<li><a href="admission.html" data-icon="plus">Start Admission</a></li>
+<li><a href="contact.html" data-icon="phone">Contact Support</a></li>
+</ul>
+<label for="interest-level">Your Interest in Joining:</label>
+<input type="range" name="interest-level" id="interest-level" value="50" min="0"
+max="100" data-highlight="true">
+<a href="admission.html" data-role="button" data-icon="arrow-r" data-theme="b">Get
+Started</a>
+</div>
+</div>
+</body>
+</html>
